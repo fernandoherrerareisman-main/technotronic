@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos - Technotronic</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!-- Encabezado (Idéntico a la página principal) -->
+    <header>
+        <div class="contenedor-navbar">
+            <div class="contenedor-logo">
+                <img src="img/logo4.jpg" alt="Logo Technotronic">
+            </div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="index.html">Productos</a>
+                <a href="#">Quiénes somos</a>
+                <a href="contacto2.html">Contacto</a> 
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Banner de bienvenida -->
+        <section class="inicio">
+            <h2>Conoce más sobre nosotros</h2>
+            <p>
+                Trabajamos día a día para conectar a los peruanos con lo último en innovación y rendimiento tecnológico.
+            </p>
+        </section>
+
+        <!-- NUEVA ESTRUCTURA: Sección Nuestra Empresa con Imagen y Texto a la par -->
+        <section class="seccion-nosotros">
+            <h2>Nuestra Empresa</h2>
+            <div class="contenedor-nosotros" style="display: flex; align-items: center; justify-content: center; gap: 40px; max-width: 1000px; margin: 0 auto; padding: 20px; flex-wrap: wrap;">
+                
+                <!-- Columna del Texto -->
+                <div class="texto-nosotros" style="flex: 1; min-width: 300px; line-height: 1.6; text-align: justify">
+                    <p>
+                        En <strong>Technotronic</strong> somos una empresa peruana dedicada a ofrecer las mejores soluciones en cómputo del mercado. Brindamos hardware de última generación, soporte técnico especializado y una asesoría personalizada para que encuentres el equipo ideal que potencie tus proyectos, estudios o largas jornadas de juego.
+                    </p>
+                </div>
+
+                <!-- Columna de la Imagen -->
+                <div class="imagen-nosotros" style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
+                    <!-- Recuerda guardar la imagen en tu carpeta img y poner el nombre correcto en el src -->
+                    <img src="img/empresa.jpg" alt="Alianza y soluciones Technotronic" style="width: 100%; max-width: 450px; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Bloque corporativo (Pilares) -->
+        <section id="valores-seccion">
+            <h2>Nuestros Pilares</h2>
+            <div class="contenedor-productos">
+                <!-- Tarjeta Misión -->
+                <div class="card">
+                    <br>
+                    <h3>Nuestra Misión</h3>
+                    <p style="padding: 15px; text-align: justify; font-size: 0.95rem;">
+                        Proveer herramientas tecnológicas de alta calidad que impulsen el desarrollo digital de estudiantes, profesionales y gamers en todo el Perú, respaldados por un soporte técnico de primer nivel.
+                    </p>
+                </div>
+
+                <!-- Tarjeta Visión -->
+                <div class="card">
+                    <br>
+                    <h3>Nuestra Visión</h3>
+                    <p style="padding: 15px; text-align: justify; font-size: 0.95rem;">
+                        Consolidarnos como el distribuidor líder y más confiable de soluciones de cómputo en el país, reconocidos por nuestra excelencia en atención al cliente y catálogo de vanguardia.
+                    </p>
+                </div>
+
+                <!-- Tarjeta Valores -->
+                <div class="card">
+                    <br>
+                    <h3>Valores</h3>
+                    <p style="padding: 15px; text-align: justify; font-size: 0.95rem;">
+                        Nos define el compromiso con la calidad, la transparencia en cada venta, la pasión por la tecnología y la innovación constante para superar las expectativas de nuestros clientes.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página (Idéntico a la página principal) -->
+    <footer id="Contacto">
+        <p>Technotronic</p>
+        <p>Contacto: ventas@technotronic.com</p>
+    </footer>
+
+    <script>
+        console.log('Hola, mundo desde la sección Quiénes Somos de Technotronic')
+    </script>
+</body>
+
+</html>

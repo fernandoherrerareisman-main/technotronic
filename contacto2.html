@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Solicitudes - Technotronic</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="contenedor-navbar">
+            <div class="contenedor-logo">
+                <img src="img/logo4.jpg" alt="Logo Technotronic">
+            </div>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="index.html">Productos</a>
+                <a href="quienes-somos.html">Quiénes somos</a>
+                <a href="#Contacto">Contacto</a> 
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section class="seccion-formulario">
+            <h2>Solicitud de Cotización</h2>
+            <p>Déjanos tus datos y cuéntanos qué producto tecnológico estás buscando. Te responderemos a la brevedad.</p>
+            
+            <div class="contenedor-formulario">
+                <form action="#" method="POST">
+                    
+                    <!-- Campo Nombre -->
+                    <div class="grupo-formulario">
+                        <label for="nombre">Nombres y Apellidos:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                    </div>
+
+                    <!-- Campo Correo -->
+                    <div class="grupo-formulario">
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <!-- Campo Teléfono -->
+                    <div class="grupo-formulario">
+                        <label for="telefono">Teléfono / WhatsApp:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ej. 987654321">
+                    </div>
+
+                    <!-- Campo Tipo de Producto (Select) -->
+                    <div class="grupo-formulario">
+                        <label for="categoria">Categoría del Producto:</label>
+                        <select id="categoria" name="categoria" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="computadora">Computadora de Escritorio</option>
+                            <option value="laptop">Laptop / Notebook</option>
+                            <option value="periferico">Periféricos (Teclado, Mouse, Audífonos)</option>
+                            <option value="componente">Componentes (Tarjeta de video, Procesador, RAM)</option>
+                            <option value="otros">Otros accesorios</option>
+                        </select>
+                    </div>
+
+                    <!-- Campo Detalle de Solicitud (Textarea) -->
+                    <div class="grupo-formulario">
+                        <label for="mensaje">Detalles del producto deseado:</label>
+                        <textarea id="mensaje" name="mensaje" rows="6" placeholder="Describe las especificaciones técnicas o el modelo del componente que necesitas..." required></textarea>
+                    </div>
+
+                    <!-- Botón de Envío -->
+                    <button type="submit" class="btn-enviar">Enviar Solicitud</button>
+                    
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="Contacto">
+        <p>Technotronic</p>
+        <p>Contacto: ventas@technotronic.com</p>
+    </footer>
+</body>
+
+</html>

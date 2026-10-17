@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    background-color: rgb(30, 64, 175);
+    color: white;
+}
+
+header {
+    background-color: rgb(15, 23, 42);
+    padding: 15px 40px;
+    position: sticky;
+    /* Mantiene la barra de navegación fija al hacer scroll */
+    top: 0;
+    z-index: 1000;
+}
+
+.contenedor-navbar {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-logo {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-logo img {
+    width: 280px;
+    /* Ajustado para que el logo horizontal sea legible */
+    height: auto;
+    display: block;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    /* Transición suave para el hover */
+}
+
+nav a:hover {
+    color: rgb(96, 165, 250);
+    /* Cambio de color al pasar el cursor */
+}
+
+main {
+    padding: 30px;
+}
+
+/* --- Carrusel --- */
+.carrusel {
+    width: 100%;
+    height: 350px;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 30px auto;
+    border-radius: 15px;
+    /* Bordes suavizados para combinar con la estética */
+}
+
+.contenedor-slide {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    animation: mover 12s infinite ease-in-out;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    45% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-75%);
+    }
+
+    95% {
+        transform: translateX(-75%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slide {
+    width: 25%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* --- Sección Inicio --- */
+.inicio {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Fondo translúcido moderno */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 30px;
+    /* Más espacio interno */
+    margin: 40px auto;
+    max-width: 1200px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-productos {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 20px;
+    background-color: rgb(15, 23, 42);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.btn-productos:hover {
+    background-color: rgb(30, 41, 59);
+    transform: translateY(-2px);
+}
+
+/* --- Productos --- */
+.contenedor-productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* Mayor espacio entre tarjetas */
+    margin-top: 25px;
+}
+
+.card {
+    width: 280px;
+    /* Un poco más anchas para mejor distribución */
+    height: auto;
+    /* Altura automática para evitar cortes de texto */
+    padding: 25px;
+    background-color: white;
+    border: none;
+    /* Removido borde oscuro para un look más limpio */
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    /* Sombra elegante */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    /* Efecto de elevación al pasar el cursor */
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: rgb(15, 23, 42);
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.card p {
+    margin-top: 8px;
+    color: rgb(71, 85, 105);
+}
+
+.precio {
+    font-size: 22px;
+    font-weight: 800;
+    color: rgb(29, 78, 216) !important;
+    /* Resalta el precio en azul */
+    margin: 10px 0;
+}
+
+.card button {
+    width: 100%;
+    /* Botón a lo ancho de la tarjeta */
+    padding: 12px;
+    margin-top: 15px;
+    background-color: rgb(15, 23, 42);
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: rgb(29, 78, 216);
+}
+
+/* --- Video --- */
+.seccion-video {
+    max-width: 1000px;
+    margin: 60px auto 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+.seccion-video h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.contenedor-video {
+    width: 100%;
+    max-width: 850px;
+    margin: 30px auto 0;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
+}
+
+.contenedor-video video {
+    width: 100%;
+    display: block;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: rgb(15, 23, 42);
+    text-align: center;
+    padding: 40px;
+    margin-top: 60px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+    margin: 5px 0;
+    color: rgb(148, 163, 184);
+}
+
+footer p:first-child {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+
+/* ********************************************
+--- Estilos para la página de Contacto2 --- 
+*********************************************** */
+
+.seccion-formulario {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.seccion-formulario h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.seccion-formulario p {
+    color: rgb(226, 232, 240);
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.contenedor-formulario {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.grupo-formulario {
+    margin-bottom: 20px;
+}
+
+.grupo-formulario label {
+    display: block;
+    color: rgb(15, 23, 42);
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.grupo-formulario input,
+.grupo-formulario select,
+.grupo-formulario textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid rgb(226, 232, 240);
+    border-radius: 10px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15px;
+    color: rgb(15, 23, 42);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Cambia el color del borde cuando el cliente hace clic en el campo */
+.grupo-formulario input:focus,
+.grupo-formulario select:focus,
+.grupo-formulario textarea:focus {
+    border-color: rgb(30, 64, 175);
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 14px;
+    background-color: rgb(30, 64, 175);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-enviar:hover {
+    background-color: rgb(15, 23, 42);
+    transform: translateY(-2px);
+}

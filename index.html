@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technotronic - Soluciones en Cómputo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="contenedor-navbar">
+            <div class="contenedor-logo">
+                <img src="img/logo4.jpg" alt="Logo Technotronic">
+            </div>
+            <nav>
+                <a href="#">Inicio</a>
+                <!-- Apunta a la sección de productos -->
+                <a href="#productos-seccion">Productos</a>
+                <!-- Apunta a la nueva sección de quiénes somos -->
+                <a href="quienes-somos.html">Quiénes somos</a>
+                <!-- Apunta directamente al id del footer -->
+                <a href="contacto2.html">Contacto</a> 
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section class="carrusel">
+            <div class="contenedor-slide">
+                <div class="slide">
+                    <img src="img/carrusel-1.jfif" alt="Promoción 1">
+                </div>
+                <div class="slide">
+                    <img src="img/carrusel-2.jfif" alt="Promoción 2">
+                </div>
+                <div class="slide">
+                    <img src="img/carrusel-3.jfif" alt="Promoción 3">
+                </div>
+                <div class="slide">
+                    <img src="img/carrusel-4.jfif" alt="Promoción 4">
+                </div>
+            </div>
+        </section>
+
+        <section class="inicio">
+            <h2>El mejor distribuidor de tecnología del Perú</h2>
+            <p>
+                Encuentra los mejores productos tecnológicos como computadoras, laptops, periféricos, accesorios y más.
+            </p>
+            <a href="#productos-seccion" class="btn-productos">
+                Ver productos
+            </a>
+        </section>
+
+        <!-- NUEVA SECCIÓN: Quiénes somos -->
+        <section id="quienes-somos" class="seccion-nosotros">
+            <h2>Quiénes somos</h2>
+            <div class="contenedor-nosotros">
+                <p>
+                    En <strong>Technotronic</strong> somos una empresa peruana dedicada a ofrecer las mejores soluciones en cómputo del mercado. Brindamos hardware de última generación, soporte técnico especializado y una asesoría personalizada para que encuentres el equipo ideal que potencie tus proyectos, estudios o largas jornadas de juego.
+                </p>
+            </div>
+        </section>
+
+        <!-- Se añadió el id "productos-seccion" para enlazarlo con el menú -->
+        <section id="productos-seccion">
+            <h2>Nuestros productos</h2>
+            <div class="contenedor-productos">
+                <div class="card">
+                    <img src="img/computadora.jpg" alt="Computadoras Ryzen de alta gama">
+                    <h3>Últimas computadoras</h3>
+                    <p>Computadoras de alta gama con un procesador robusto</p>
+                    <p>Gamer PRO</p>
+                    <p class="precio">S/. 2,700.00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/laptop.jpg" alt="Laptops de última generación">
+                    <h3>Laptops de última generación</h3>
+                    <p>Máxima potencia y rendimiento. Diseñadas para el trabajo 24/7</p>
+                    <p class="precio">S/. 3,800.00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/impresora.jpg" alt="Impresoras y periféricos de alta gama">
+                    <h3>Periféricos de alta gama</h3>
+                    <p>Precisión, respuesta inmediata y confort. Confiables, de larga vida y sin uso de cables</p>
+                    <p class="precio">S/. 1,500.00</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-video">
+            <h2>Conoce nuestros productos</h2>
+            <p>
+                Descubre grandes productos tecnológicos que tenemos para ti.
+            </p>
+            <div class="contenedor-video">
+                <video autoplay muted loop controls>
+                    <source src="img/video_tecno.mp4" type="video/mp4">
+                    Tu navegador no soporta videos HTML5.
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <footer id="Contacto">
+        <p>Technotronic</p>
+        <p>Contacto: ventas@technotronic.com</p>
+    </footer>
+
+    <script>
+        console.log('Hola, mundo desde la web de Technotronic')
+    </script>
+</body>
+
+</html>
